@@ -8,3 +8,18 @@ var index = [
     {key: 8, sector: 214, t_score: 5, id: '283hy8347', value: 'Cylon'},
     {key: 3, sector: 8346, t_score: 10, id: 'n9837ks857', value: 'Jawa'},
 ]
+function getNameId3Char(item) {
+    var NameId3Char = [item.value,item.id.substring(0,3)].join(" ");
+    return NameId3Char;
+  }
+  console.log(index.map(getNameId3Char));
+var persons = [
+    {firstname : "Malcom", lastname: "Reynolds"},
+    {firstname : "Kaylee", lastname: "Frye"},
+    {firstname : "Jayne", lastname: "Cobb"}
+  ];
+  function getFullName(item) {
+    var fullname = [item.firstname,item.lastname].join(" ");
+    return fullname;
+  }
+  console.log(persons.map(getFullName));
