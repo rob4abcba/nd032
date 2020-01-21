@@ -40,5 +40,22 @@ const greet = () => {
 //       returns an array of items counting down from that number to 
 //       zero.
 // -----------------------------------------------------------------
+// ES5 Solution
+function countDown(startNum) {
+    let countDownArray = []
+    for(let i = startNum; i >= 0; i-- ){
+        countDownArray.push(i)
+    }
+    return countDownArray
+}
+console.log("ES5", countDown(5));
 
-
+// ES6
+const countDownES6 = (startNum) => {
+    let countDownArray = []
+    for(let i = startNum; i >= 0; i-- ){
+        countDownArray.push(i)
+    }
+    return countDownArray
+}
+console.log("ES6", countDownES6(6));
