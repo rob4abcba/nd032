@@ -1,9 +1,9 @@
 /* 
-// RL With a couple edits I faked it out to get the correct answer.  However, a better solution is at the bottom.
+// MC With a couple edits I faked it out to get the correct answer.  However, a better solution is at the bottom.
 // Directions: Translate from normal function to pure function
-// RL let greeting = 'Hello, '
+// MC let greeting = 'Hello, '
 const greet = (name) => {
-  // RL define initial greeting inside the function to avoid repeated accumulation of names added to the end
+  // MC define initial greeting inside the function to avoid repeated accumulation of names added to the end
   let greeting = 'Hello, '
     return greeting += name
 }
