@@ -1,10 +1,14 @@
-class WarpDrive {
+// Object-Oriented version
+// Class – An abstraction or template from which objects are created
+class WarpDrive {  
     constructor(type) {
+        // Attribute – A variable defined in a class or object. Also called fields, members, or class variables.
         this.type = type
         this.status = 'active'
         this.warp = 2
     }
 
+    // Method – A function inside a class or object.
     status_report() {
         if (this.status === 'active' && this.warp <= 4) {
             return 'Captain, the engines are active and we could be going faster.'
@@ -26,6 +30,7 @@ class WarpDrive {
     }
 }
 
+// Instantiation – Creating an object based on a class.
 let enterprise_warp = new WarpDrive('Dilithium Crystal')
 
 enterprise_warp.set_warp(2)
