@@ -1,10 +1,10 @@
-/* 
+/*
 // MC With a couple edits I faked it out to get the correct answer.  However, a better solution is at the bottom.
 // Directions: Translate from normal function to pure function
 // MC let greeting = 'Hello, '
 const greet = (name) => {
   // MC define initial greeting inside the function to avoid repeated accumulation of names added to the end
-  let greeting = 'Hello, '
+    let greeting = 'Hello, '
     return greeting += name
 }
 // this code could be problematic because greeting is in the global scope. 
